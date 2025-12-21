@@ -1,0 +1,91 @@
+project-name/
+├── src/
+│   ├── config/
+│   │   ├── database.js          # Database connection config
+│   │   ├── environment.js       # Environment variables
+│   │   └── constants.js         # App constants
+│   │
+│   ├── models/                  # Mongoose models
+│   │   ├── User.js
+│   │   ├── Product.js
+│   │   ├── Order.js
+│   │   └── index.js             # Export all models
+│   │
+│   ├── schemas/                 # Joi validation schemas (optional)
+│   │   ├── user.schema.js
+│   │   ├── product.schema.js
+│   │   └── index.js
+│   │
+│   ├── controllers/             # Route controllers
+│   │   ├── auth.controller.js
+│   │   ├── user.controller.js
+│   │   ├── product.controller.js
+│   │   └── order.controller.js
+│   │
+│   ├── services/                # Business logic
+│   │   ├── auth.service.js
+│   │   ├── user.service.js
+│   │   ├── product.service.js
+│   │   └── email.service.js
+│   │
+│   ├── middleware/              # Custom middleware
+│   │   ├── auth.middleware.js
+│   │   ├── validation.middleware.js
+│   │   ├── error.middleware.js
+│   │   └── logger.middleware.js
+│   │
+│   ├── routes/                  # API routes
+│   │   ├── auth.routes.js
+│   │   ├── user.routes.js
+│   │   ├── product.routes.js
+│   │   ├── order.routes.js
+│   │   └── index.js            # Combine all routes
+│   │
+│   ├── utils/                   # Utility functions
+│   │   ├── helpers.js
+│   │   ├── validators.js
+│   │   ├── logger.js
+│   │   └── apiResponse.js
+│   │
+│   ├── repositories/            # Database operations (Repository pattern)
+│   │   ├── user.repository.js
+│   │   ├── product.repository.js
+│   │   └── base.repository.js
+│   │
+│   ├── validators/              # Request validators (if not using Joi in schemas)
+│   │   ├── auth.validator.js
+│   │   └── user.validator.js
+│   │
+│   ├── docs/                    # API documentation
+│   │   └── swagger.yaml
+│   │
+│   ├── public/                  # Static files
+│   │   ├── images/
+│   │   ├── css/
+│   │   └── js/
+│   │
+│   ├── uploads/                 # File uploads directory
+│   │
+│   ├── seeds/                   # Database seeders
+│   │   ├── user.seeder.js
+│   │   └── product.seeder.js
+│   │
+│   ├── tests/                   # Test files
+│   │   ├── unit/
+│   │   │   ├── user.test.js
+│   │   │   └── auth.test.js
+│   │   ├── integration/
+│   │   │   └── api.test.js
+│   │   └── fixtures/           # Test data
+│   │
+│   └── app                  # Express app configuration
+│   └── server.js              # Server entry point
+│
+├── .env                        # Environment variables
+├── .env.example               # Environment variables template
+├── .gitignore
+├── .eslintrc.js               # ESLint configuration
+├── .prettierrc                # Prettier configuration
+├── package.json
+├── README.md
+└── docker-compose.yml         # Docker configuration (optional)
