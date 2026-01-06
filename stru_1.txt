@@ -42,7 +42,7 @@ project-name/
 │   │   └── index.js            # Combine all routes
 │   │
 │   ├── utils/                   # Utility functions
-│   │   ├── helpers.js
+│   │   ├── shares.js
 │   │   ├── validators.js
 │   │   ├── logger.js
 │   │   └── apiResponse.js

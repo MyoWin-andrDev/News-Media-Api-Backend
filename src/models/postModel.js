@@ -5,9 +5,9 @@ const PostSchema = new Schema({
     title : {type : String, required : true},
     content : {type : String, required : true},
     image : {type : Array},
-    categoryId : {type : Schema.Types.ObjectId, required : true},
-    tagId : {type : Schema.Types.ObjectId, required : true},
-    authorId : {type : Schema.Types.ObjectId, required : true},
+    categoryId : {type : Schema.Types.ObjectId, ref : 'category'},
+    tagId : {type : Schema.Types.ObjectId, ref : 'tag'},
+    authorId : {type : Schema.Types.ObjectId, ref : 'user'},
     like : {type : Number},
     comment : {type : Schema.Types.ObjectId}
 })
